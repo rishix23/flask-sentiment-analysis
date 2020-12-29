@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
+import twitter
 
 app = Flask(__name__)
 
@@ -32,9 +33,10 @@ def index():
     else:
         return render_template("index.html")
 
-@app.route('/test')
-def test():
-    return render_template("index1.html")
+@app.route('/twitterScrap')
+def twitterScrap():
+    twitter.create_webdriver_instance()
+    return f"Should work!"
 
 @app.route('/submit', methods=['POST'])
 def submit():
