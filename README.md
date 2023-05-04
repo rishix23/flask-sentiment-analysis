@@ -1,2 +1,2 @@
 My final year dissertation which was on Sentiment Analysis and Asepect Based Sentiment Analysis in Social Media Monitoring. The application of NLP (Natural Language Processing), statistics, and machine learning within a flask web applciation integrating ML algorithms such as Logistic Regression, Naive Bayes, and Decision Trees.
-Technologies used includes flask, python, redis server, postgres, Javascript, HTML, and CSS
+Technologies used includes flask, python, redis server, postgres, Javascript, HTML, and CSS.
