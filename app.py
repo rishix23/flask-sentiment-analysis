@@ -6,12 +6,8 @@ app = Flask(__name__)
 
 ENV = 'dev'
 
-if ENV == 'dev':
-    app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:superuser@localhost/test'
-else:
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://umpsmgfpmnbacd:a47651ce2664dcb9fb8e55ccc5f34e4aca6b3ce9d0bd04ccc8a7b774e2de9219@ec2-54-208-233-243.compute-1.amazonaws.com:5432/d3b5k0aspcf3bq'
-    app.debug = False
+# TODO:
+# UPDATE API URIS
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
