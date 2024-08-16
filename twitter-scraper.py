@@ -181,7 +181,7 @@ def main(username, password, search_term, filepath, page_sort='Top'):
 
 if __name__ == '__main__':
     usr = "rp00463@surrey.ac.uk"
-    pwd = "sleezy"
+    pwd = ""
     path = 'tweetsFound.csv'
     term = 'trump'
 
